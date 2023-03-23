@@ -1,0 +1,125 @@
+.weatherApp {
+  background-image: url("./images/weather-image.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.weather-sec {
+  padding-top: 70px;
+}
+@media(max-width:575px){
+    .weather-sec{
+        padding-top: 50px;
+    }
+}
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .input {
+    flex-direction: column;
+  }
+}
+input.weather-input {
+  width: 480px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid gray;
+}
+@media (max-width: 575px) {
+  input.weather-input {
+    width: 100%;
+  }
+}
+input.weather-input:focus {
+  outline: none;
+}
+button.btn {
+  width: 110px;
+  padding: 13px;
+  border-radius: 22px;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: blueviolet;
+}
+@media (max-width: 767px) {
+  button.btn {
+    margin-top: 20px;
+  }
+}
+button.btn:hover {
+  background-color: blueviolet;
+  color: white;
+}
+.weatherinfo {
+  padding: 90px 0 20px;
+  text-align: center;
+}
+@media(max-width:575px){
+    .weatherinfo{
+        padding-top: 60px;
+    }
+}
+.day-section {
+  display: flex;
+  justify-content: center;
+  margin: 0 -5px;
+  flex-wrap: wrap;
+}
+.day-item {
+  padding: 0 5px 10px;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+@media (max-width: 575px) {
+  .day-item {
+    font-size: 20px;
+  }
+}
+.cityname {
+  font-size: 50px;
+  color: white;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+@media (max-width: 575px) {
+  .cityname {
+    font-size: 40px;
+    font-weight: 600px;
+  }
+}
+.temp {
+  font-size: 90px;
+  color: white;
+  padding-bottom: 10px;
+  line-height: 100%;
+}
+@media (max-width: 575px) {
+  .temp {
+    font-size: 70px;
+    line-height: 90%;
+  }
+}
+.desc {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 10px;
+  margin-right: 30px;
+}
+@media (max-width: 575px) {
+  .desc {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
