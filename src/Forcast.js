@@ -21,7 +21,7 @@ function Forcast() {
       .then((data) => {
         setWeather(data);
         setCityname("");
-        console.log(data);
+        // console.log(data);
       });
     // }
   }
@@ -137,7 +137,7 @@ function Forcast() {
           Submit
         </button>
       </div>
-      {weather.main !== undefined && (
+      {weather.main !== undefined && weather.cos !== 404 ? (
         <div className="weatherinfo">
           <div className="cityname">
             {newWeatherName}
@@ -154,6 +154,8 @@ function Forcast() {
             {weatherIcon}
           </div>
         </div>
+      ) : (
+        <div className="error-message">{weather.message}</div>
       )}
     </div>
   );
